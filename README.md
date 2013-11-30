@@ -24,4 +24,4 @@ go to the root path of your project then:
 Links:
 ======
 
-***MoKee OpenSource* : [This link ](htttp://www.mfunz.com)
+**MoKee OpenSource** : [This link ](htttp://www.mfunz.com/)
