@@ -1,24 +1,27 @@
-Jelly Bean for Motorola Defy (Android 4.1.2)
+Jelly Bean for Motorola Defy (Android 4.3.1)
 
-Download:
+MoKee OpenSource:
 =========
 
-repo init -u git://github.com/Quarx2k/android.git -b jellybean
+    repo init -u https://github.com/MoKee/android.git -b jb-mr2_mkt
 
-repo sync
+ or
+
+    repo init -u ssh://[username]@review.mfunz.com:29418/MoKee/android.git -b jb-mr2_mkt
+
+Then to sync up:
+
+    repo sync
 
 Build:
 ======
-cd vendor/cm && ./get-prebuilts
+go to the root path of your project then:
 
-copy /device/moto/jordan-common/apply_linaro.sh to root of tree and run it.
-
-For CM10 branch :
-  source build/envsetup.sh && lunch cm_mb526-userdebug && make -jX bacon
-
-Use the signed zip to update the defy with the bootmenu recovery, not the ota package !
+* . build/envsetup.sh(attention the spaces)
+* lunch
+* make bacon
 
 Links:
 ======
 
-XDA JB Thread : http://forum.xda-developers.com/showthread.php?t=1768702
+**MoKee OpenSource** : [This link ](http://www.mfunz.com/)
