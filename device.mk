@@ -84,7 +84,7 @@ PRODUCT_PACKAGES += rild Dialer
 # Sound
 PRODUCT_PACKAGES += \
 	audio.a2dp.default  \
-	audio_policy.jordan \
+	audio_policy.default \
 	audio.primary.omap3
 
 PRODUCT_PACKAGES += power.omap3 hwcomposer.jordan
