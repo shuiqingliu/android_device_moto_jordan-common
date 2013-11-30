@@ -233,6 +233,14 @@ service ssmgrd /system/bin/ssmgrd
     group radio input system
     oneshot
 
+# Phone modem error handling
+service panic_daemon /system/bin/panic_daemon
+    class main
+    user radio
+    group radio system graphics sdcard_rw
+    socket panic_daemon stream 660 radio radio
+    onrestart exec /system/bin/handle_bp_panic.sh
+
 # Ecompass daemon
 service akmd2 /system/bin/akmd2
     class main
