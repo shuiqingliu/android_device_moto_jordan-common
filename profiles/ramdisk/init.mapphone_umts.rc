@@ -79,8 +79,9 @@ on post-fs
     # Disable a system-wide task dump on OOM in default
 
     write /proc/sys/fs/suid_dumpable 2
-    # Power Management
 
+# Disable green led
+    write /sys/class/leds/green/brightness 0
 
 # Change ownership for vibrators
     chown system system /sys/class/timed_output/vibrator/enable
